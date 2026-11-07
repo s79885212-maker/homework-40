@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Вход</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <main class="card">
+    <h1 class="card__title">Вход</h1>
+    <p class="card__hint">Тестовый аккаунт: <b>emilys</b> / <b>emilyspass</b></p>
+
+    <form id="login-form" class="form" novalidate>
+      <div class="form__field">
+        <label for="username">Логин</label>
+        <input type="text" id="username" name="username" autocomplete="username">
+        <p class="form__error" id="username-error"></p>
+      </div>
+
+      <div class="form__field">
+        <label for="password">Пароль</label>
+        <input type="password" id="password" name="password" autocomplete="current-password">
+        <p class="form__error" id="password-error"></p>
+      </div>
+
+      <p class="form__message" id="form-message"></p>
+
+      <button type="submit" class="btn" id="login-btn">Войти</button>
+    </form>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.7.9/dist/axios.min.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/login.js"></script>
+</body>
+</html>
